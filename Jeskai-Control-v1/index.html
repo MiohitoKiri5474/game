@@ -1,0 +1,325 @@
+<!DOCTYPE html><html class="theme-next pisces use-motion" lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta name="theme-color" content="#222"><meta name="google-site-verification" content="m9sOVJZxIJPa9f7LP6pLEnLhZjHBWpXH9gPv4Vh2vOM"><script src="/game/lib/pace/pace.min.js?v=1.0.2"></script><link href="/game/lib/pace/pace-theme-flash.min.css?v=1.0.2" rel="stylesheet"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="google-site-verification" content="m9sOVJZxIJPa9f7LP6pLEnLhZjHBWpXH9gPv4Vh2vOM"><link href="/game/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="/game/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/game/css/main.css?v=5.1.4" rel="stylesheet" type="text/css"><link rel="apple-touch-icon" sizes="180x180" href="/game/images/logo.jpg?v=5.1.4"><link rel="icon" type="image/png" sizes="32x32" href="/game/images/logo.jpg?v=5.1.4"><link rel="icon" type="image/png" sizes="16x16" href="/game/images/logo.jpg?v=5.1.4"><meta name="keywords" content="MTG,Deck Teck,"><link rel="alternate" href="/game/atom.xml" title="Gamer MiohitoKiri" type="application/atom+xml"><meta name="description" content="前言一直以來都只有打標準跟指揮官，直到今年六月中的近代新篇二發售本來只是為了指揮官想要開對色找而加減拆幾包，最後卻不小心掉進去近代坑當時最一開始組的是黑綠廚房，也有在線上店家賽拿到冠軍過，不過對於起手要求太高，幾本上已經算是半套組合技 deck，雖然改成阿布讚廚房後穩定性提高很多，不過還是太怕鎖，只差沒有正編殺手留念或活旺之力，最後在價格還在高點的時候趕快倒掉回血後來拿留下的克撒傳組了神器共鳴，不"><meta property="og:type" content="article"><meta property="og:title" content="[Deck Tech] Jeskai Control without Solitude &amp; Chalice"><meta property="og:url" content="https://miohitokiri5474.github.io/game/Jeskai-Control-v1/index.html"><meta property="og:site_name" content="Gamer MiohitoKiri"><meta property="og:description" content="前言一直以來都只有打標準跟指揮官，直到今年六月中的近代新篇二發售本來只是為了指揮官想要開對色找而加減拆幾包，最後卻不小心掉進去近代坑當時最一開始組的是黑綠廚房，也有在線上店家賽拿到冠軍過，不過對於起手要求太高，幾本上已經算是半套組合技 deck，雖然改成阿布讚廚房後穩定性提高很多，不過還是太怕鎖，只差沒有正編殺手留念或活旺之力，最後在價格還在高點的時候趕快倒掉回血後來拿留下的克撒傳組了神器共鳴，不"><meta property="og:locale" content="en_US"><meta property="article:published_time" content="2021-12-18T13:45:42.000Z"><meta property="article:modified_time" content="2024-01-08T09:55:31.063Z"><meta property="article:author" content="MiohitoKiri5474"><meta property="article:tag" content="MTG"><meta property="article:tag" content="Deck Teck"><meta name="twitter:card" content="summary"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/game/",scheme:"Pisces",version:"5.1.4",sidebar:{position:"left",display:"always",offset:12,b2t:!1,scrollpercent:!0,onmobile:!1},fancybox:!0,tabs:!0,motion:{enable:!0,async:!1,transition:{post_block:"fadeIn",post_header:"slideDownIn",post_body:"slideDownIn",coll_header:"slideLeftIn",sidebar:"slideUpIn"}},duoshuo:{userId:"0",author:"Author"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="https://miohitokiri5474.github.io/game/Jeskai-Control-v1/"><title>[Deck Tech] Jeskai Control without Solitude & Chalice | Gamer MiohitoKiri</title><script>!function(e,a,t,n,g,c){e.GoogleAnalyticsObject=n,e.ga=e.ga||function(){(e.ga.q=e.ga.q||[]).push(arguments)},e.ga.l=+new Date,g=a.createElement(t),c=a.getElementsByTagName(t)[0],g.async=1,g.src="https://www.google-analytics.com/analytics.js",c.parentNode.insertBefore(g,c)}(window,document,"script","ga"),ga("create","UA-151767837-1","auto"),ga("send","pageview")</script><meta name="generator" content="Hexo 4.2.1"></head><body itemscope itemtype="http://schema.org/WebPage" lang="en"><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/game/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Gamer MiohitoKiri</span> <span class="logo-line-after"><i></i></span></a></div><h1 class="site-subtitle" itemprop="description"></h1></div><div class="site-nav-toggle"><button><span class="btn-bar"></span> <span class="btn-bar"></span> <span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/game/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br>Home</a></li><li class="menu-item menu-item-about"><a href="/game/about/" rel="section"><i class="menu-item-icon fa fa-fw fa-user"></i><br>About</a></li><li class="menu-item menu-item-tags"><a href="/game/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br>Tags</a></li><li class="menu-item menu-item-archives"><a href="/game/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br>Archives</a></li><li class="menu-item menu-item-main-page"><a href="https://miohitokiri5474.github.io/" rel="section"><i class="menu-item-icon fa fa-fw fa-flag"></i><br>Main Page</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="popup-trigger"><i class="menu-item-icon fa fa-search fa-fw"></i><br>Search</a></li></ul><div class="site-search"><div class="popup search-popup local-search-popup"><div class="local-search-header clearfix"><span class="search-icon"><i class="fa fa-search"></i> </span><span class="popup-btn-close"><i class="fa fa-times-circle"></i></span><div class="local-search-input-wrapper"><input autocomplete="off" placeholder="Searching..." spellcheck="false" type="text" id="local-search-input"></div></div><div id="local-search-result"></div></div></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><div class="post-block"><link itemprop="mainEntityOfPage" href="https://miohitokiri5474.github.io/game/game/Jeskai-Control-v1/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="MiohitoKiri5474"><meta itemprop="description" content><meta itemprop="image" content="/game/images/avatar.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Gamer MiohitoKiri"></span><header class="post-header"><h2 class="post-title" itemprop="name headline">[Deck Tech] Jeskai Control without Solitude & Chalice</h2><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i> </span><span class="post-meta-item-text">Posted on</span> <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-12-18T21:45:42+08:00">2021-12-18</time></span></div></header><div class="post-body" itemprop="articleBody"><h2 id="前言"><a class="header-anchor" href="#前言"></a>前言</h2><p>一直以來都只有打標準跟指揮官，直到今年六月中的近代新篇二發售<br>本來只是為了指揮官想要開對色找而加減拆幾包，最後卻不小心掉進去近代坑<br>當時最一開始組的是黑綠廚房，也有在線上店家賽拿到冠軍過，不過對於起手要求太高，幾本上已經算是半套組合技 deck，雖然改成阿布讚廚房後穩定性提高很多，不過還是太怕鎖，只差沒有正編殺手留念或活旺之力，最後在價格還在高點的時候趕快倒掉回血<br>後來拿留下的克撒傳組了神器共鳴，不過也是過度吃起手的套牌，不是很喜歡，所以打了一陣子後也是賣掉了<br>會動念想要組傑斯凱控制，有部分原因是我相當喜歡展現迭代以及虹彩終局這兩張牌，所以想要找能夠同時放這兩張牌的 deck，同時又想要打控制，所以才開始研究傑斯凱控制的牌組</p><p>不過迫於經濟壓力，沒辦法收白呼魂跟聖杯，加上喜歡迅咒的彈性，因此構築較為傳統，跟現在主流的白呼魂聖杯底控制不太一樣</p><a id="more"></a><p>而且因為展現迭代跟控制相性不太合，所以也拔掉了</p><h2 id="Deck-List"><a class="header-anchor" href="#Deck-List"></a>Deck List</h2><blockquote><p>生物<br>3x 迅咒法師<br>2x 黯潮龍侯</p><p>巫術<br>3x 虹彩終局</p><p>瞬間<br>4x 閃電擊<br>3x 流放之徑<br>4x 反擊咒語<br>3x 大法師的護符<br>1x 否認之力<br>2x 粹麗指命<br>2x 地下指命<br>2x 記憶奔騰<br>2x 熱火//寒冰</p><p>地<br>1x 不毛高地<br>1x 滋生之池<br>2x 凡翠絲堡<br>1x 天界柱廊<br>1x 潮沒水濱<br>3x 冰河要塞<br>1x 風暴巨人大廳<br>2x 崇聖噴泉<br>2x 海島<br>1x 霧漫雨林<br>1x 平原<br>1x 聚污三角洲<br>1x 洛格凌群系<br>2x 沸騰山湖<br>2x 蒸氣噴發口<br>2x 硫磺瀑布</p></blockquote><p>備牌的部分則是如下</p><blockquote><p>2x 秘設爆裂物<br>2x 天界滌淨<br>1x 多溫的否決<br>2x 褪除武裝<br>2x 得享安息<br>2x 海域蔓延<br>2x 落日狂歡<br>1x 神秘干擾<br>1x 毀裂狂風</p></blockquote><h2 id="Deck-Tech"><a class="header-anchor" href="#Deck-Tech"></a>Deck Tech</h2><p>幾本上跟過往的傑斯凱控制差不多，靠 PtE、閃電擊、熱火//寒冰之類的小費用咒語來解決生物/旅法師的壓力<br>在 MH2 發售之後多了虹彩終局這張優秀的萬用拆，可說是幫助不少<br>使用絲翠海文的粹麗指命而不是以往的閃電螺旋，主因是現在的環境多多少少都有些神器，多放些靈活性高的牌會稍微好一些</p><blockquote><p>但是由於現在的紅燒太猖狂，如果是紅燒多的場合建議把這個位置換回閃電螺旋，正編局會好打一些</p></blockquote><p>至於終結的部分，也是用 MH2 的新牌：黯潮龍侯，搭配上迅咒法師可說是大有奇效，在做資源運轉的時候也同時養大自己的生物<br>同時避免龍侯都被殺光（畢竟現在白呼魂滿街跑），所以還是有掛一張大泰<br>或者是老套路：燒迅咒燒，或者慢慢打臉</p><p>小泰的強大不解釋，擋瞬間又能彈自己的迅咒，放多一點沒問題的</p><p>至於康牌的部分，因為 MH2 帶來反擊咒語，因此魔力流失、奉還之類的短康都不會放了，正康解決問題比較好<br>選用大法師的護符的理由除了它是正康以外，同時還能抽牌或是取得目標一費一下非地永久物的操控權，在不需要的時間抽到可以花三費抽兩張，同時也能算是半張解牌，畢竟現在的環境速度太快了，加減搶個蔽影矛補血或小生物擋點傷害都好<br>而地下指命的靈活度也很優秀因此選放兩張<br>否認之力只是單純為了要擋住短時間內連續的非生物威脅或是後手被一回掉手牌而放，因為使用機會不高（還有很貴）所以只放一張</p><p>地的部分只有放五張帶藍的找地地跟一張紅白找（現在的鄰色找豪貴 QAQ），為了補足缺少的找地地所以放了稍微多的 check land</p><blockquote><p>沒有預算限制的話可以把一到三張的 check land 換成找地地或 shock land</p></blockquote><p>電震地則是放兩張白藍電跟兩張紅藍電，多放一張滋生之池的理由則是要能夠穩定的把歐納斯用虹彩終局拆掉，一直補血只會讓對局越拖太久，最終錯過斬殺時機<br>凡翠絲堡用來在法力過多的時候占卜二，反正都花不完不如多看兩張牌<br>兩張不同類型的走路地各一，一個有飛行跟警戒，另一個有去除抗性，各有優缺（或是可以其中一種放二，可以自由調整）<br>同時還有凡翠絲堡，起手的地有類別會重要一些，除非也是控制內戰否則建議不要接沒類別地的起手</p><p>最後記憶奔騰是用來度過缺手牌的時候，按照現在的環境，大概會在四五回左右打乾手牌，這時候來一張奔騰補兩張手牌還是很好的，後期沒事做的時候也能 flashback 多拿兩張上手，正拍四 flashback 七的深度相當優秀（沒辦法，誰叫歷時挖掘被 ban 了）</p><p>備牌的部分<br>密設爆裂物可以用來處理猴子、龍怒師、錘子、蔽影矛、道西、token 等小東西，或是硬解小泰、莉莉、血月等麻煩的永久物<br>而天界滌淨則是對紅/黑專武，看到直接上，生物少的下 PtE，生物多的下虹彩終局<br>多溫的否決則是遇到控制或帶藍玩家可以考慮上，可以下掉大法師的護符或否認之力<br>神秘干擾對藍專武，上了準沒錯<br>海域蔓延可以用來打多色 deck 或克撒傳還有 Tron，因為自己也怕血月所以選用這張，當然月輪山影也是一個選擇，不過進場抽牌對於控制 deck 還是舒服些<br>褪除武裝用來處理元素、Reanimator 等吃大量 etb 異能的 deck，可以瞬間謙卑還是相當舒服<br>打永德也會上褪除武裝，主要是用來解塔莫跟組構體<br>落日狂歡是用來打控制或紅燒，用來補血 + 補手牌 + 補場面等多功能的牌<br>享得安息，經典的墳場針對牌，不過會卡到自己的龍侯（變成七費 3/3）跟迅咒（進場異能沒用QQ），還在想要怎麼改比較好<br>毀裂狂風則是神器結界針對牌，神器結界多的 deck 只要做成功基本上贏一半</p><h2 id="結語"><a class="header-anchor" href="#結語"></a>結語</h2><p>近期打店家賽的成績有點不太理想，可能要調整一下構築<br>而且有找到相當嚴重的備牌失誤，主要是 RIP 這張備牌同時會影響到龍侯以及迅咒，本來以為影響不大，但實際打過之後覺得需要調整<br>最近有能力的話會先去借白呼魂跟藍白找，把 deck 組成理想中的樣子來試看看<br>如果還是不行可能就只能等猴子在 legacy 被 ban 之後去收猴子打伊傑龍侯了QQ</p><h2 id="更新-2022-01-13–"><a class="header-anchor" href="#更新-2022-01-13–"></a>更新 --2022/01/13–</h2><p>最後在某次練牌被白藍控電的不要不要的<br>還是乖乖收滿白呼魂跟藍白找還有兩張聖杯<br>改成白藍帶紅的 deck 了（紅色是為了放熱火 // 寒冰）<br>Deck tech 的部分等以後有機會再寫，雖然我猜應該很快就會寫完了就是 :D</p></div><div><ul class="post-copyright"><li class="post-copyright-author"><strong>Post author:</strong> MiohitoKiri5474</li><li class="post-copyright-link"><strong>Post link:</strong> <a href="https://miohitokiri5474.github.io/game/Jeskai-Control-v1/" title="[Deck Tech] Jeskai Control without Solitude & Chalice">https://miohitokiri5474.github.io/game/Jeskai-Control-v1/</a></li><li class="post-copyright-license"><strong>Copyright Notice: </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow noopener noreferrer" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.</li></ul></div><footer class="post-footer"><div class="post-tags"><a href="/game/tags/MTG/" rel="tag"># MTG</a> <a href="/game/tags/Deck-Teck/" rel="tag"># Deck Teck</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/game/CardCellar-Modern-Monthly-2021-12-18/" rel="next" title="[賽報] 紙牌屋 2021/12/18 魔風近代賽月賽"><i class="fa fa-chevron-left"></i> [賽報] 紙牌屋 2021/12/18 魔風近代賽月賽</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"><a href="/game/Rakdos-Midrange/" rel="prev" title="Something About Rakdos Midrange">Something About Rakdos Midrange <i class="fa fa-chevron-right"></i></a></div></div></footer></div></article><div class="post-spread"></div></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span> <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span> <span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">Table of Contents</li><li class="sidebar-nav-overview" data-target="site-overview-wrap">Overview</li></ul><section class="site-overview-wrap sidebar-panel"><div class="site-overview"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="site-author-image" itemprop="image" src="/game/images/avatar.jpg" alt="MiohitoKiri5474"><p class="site-author-name" itemprop="name">MiohitoKiri5474</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"><a href="/game/archives/%7C%7C%20archive"><span class="site-state-item-count">8</span> <span class="site-state-item-name">posts</span></a></div><div class="site-state-item site-state-tags"><a href="/game/tags/index.html"><span class="site-state-item-count">7</span> <span class="site-state-item-name">tags</span></a></div></nav><div class="feed-link motion-element"><a href="/game/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/miohitokiri5474" target="_blank" title="GitHub" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-globe"></i>GitHub</a> </span><span class="links-of-author-item"><a href="https://www.facebook.com/miohitokiri5474" target="_blank" title="Facebook" rel="external nofollow noopener noreferrer"><i class="fa fa-fw fa-globe"></i>Facebook</a></span></div></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deck-List"><span class="nav-number">2.</span> <span class="nav-text">Deck List</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Deck-Tech"><span class="nav-number">3.</span> <span class="nav-text">Deck Tech</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#結語"><span class="nav-number">4.</span> <span class="nav-text">結語</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#更新-2022-01-13–"><span class="nav-number">5.</span> <span class="nav-text">更新 --2022&#x2F;01&#x2F;13–</span></a></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2024</span> <span class="with-love"><i class="fa fa-"></i> </span><span class="author" itemprop="copyrightHolder">MiohitoKiri5474</span></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i> <span id="scrollpercent"><span>0</span>%</span></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/game/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/game/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/game/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/game/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/game/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/game/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/game/js/src/utils.js?v=5.1.4"></script><script type="text/javascript" src="/game/js/src/motion.js?v=5.1.4"></script><script type="text/javascript" src="/game/js/src/affix.js?v=5.1.4"></script><script type="text/javascript" src="/game/js/src/schemes/pisces.js?v=5.1.4"></script><script type="text/javascript" src="/game/js/src/scrollspy.js?v=5.1.4"></script><script type="text/javascript" src="/game/js/src/post-details.js?v=5.1.4"></script><script type="text/javascript" src="/game/js/src/bootstrap.js?v=5.1.4"></script><script type="text/javascript">// Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/game/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script type="text/javascript" src="/game/js/src/exturl.js?v=5.1.4"></script></body></html>
